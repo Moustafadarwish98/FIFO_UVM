@@ -5,8 +5,10 @@ import fifo_sequence_item_pkg::*;
 `include "uvm_macros.svh"
 class fifo_scoreboard extends uvm_scoreboard;
 `uvm_component_utils(fifo_scoreboard)
-uvm_tlm_analysis_fifo #(fifo_seq_item) sb_fifo;
+
 uvm_analysis_export #(fifo_seq_item) sb_export;
+uvm_tlm_analysis_fifo #(fifo_seq_item) sb_fifo;
+
 fifo_seq_item seq_item_sb;
 
 parameter FIFO_WIDTH = 16;
@@ -42,7 +44,7 @@ endfunction
 
 function void connect_phase(uvm_phase phase);
     super.connect_phase(phase);
-    sb_export.connect(sb_fifo.uvm_analysis_export);
+    sb_export.connect(sb_fifo.analysis_export);
 endfunction
   
 
@@ -51,7 +53,7 @@ super.run_phase(phase);
 forever begin
     sb_fifo.get(seq_item_sb);
     ref_model(seq_item_sb);
-    if (seq_item_sb.out != data_out_ref) begin
+    if (seq_item_sb.data_out != data_out_ref) begin
         `uvm_error("run_phase", $sformatf("There is an error!!, Transacton received by the DUT is: %s whilethe refernce output is: 0b%0b",
          seq_item_sb.convert2string(), data_out_ref));
         error_counter++;
@@ -135,8 +137,8 @@ endtask : ref_model
 
 function void report_phase(uvm_phase phase);
 super.report_phase(phase);
-`uvm_info("report_phase", $sformatf("Total coorect counts is: 0d%0d",correct_counter),UVM_LOW)
-`uvm_info("report_phase", $sformatf("Total error counts is: 0d%0d",error_counter),UVM_LOW)
+`uvm_info("report_phase", $sformatf("Total coorect counts is: %0d",correct_counter),UVM_LOW)
+`uvm_info("report_phase", $sformatf("Total error counts is: %0d",error_counter),UVM_LOW)
 endfunction : report_phase
 endclass //fifo_scoreboard
     

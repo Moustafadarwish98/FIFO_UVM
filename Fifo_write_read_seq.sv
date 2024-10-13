@@ -12,7 +12,7 @@ function new ( string name = "fifo_write_read_seq");
 endfunction
 
 task  body;
-repeat(100) begin
+repeat(10000) begin
     `uvm_info("run_phase","main sequence",UVM_MEDIUM)
     seq_item = fifo_seq_item#()::type_id::create("seq_item");
     start_item(seq_item);
