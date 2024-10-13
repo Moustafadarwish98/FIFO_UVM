@@ -1,0 +1,182 @@
+C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_top.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_top.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_top.sv(4): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_top.sv(2): (vlog-13233) Design unit "Fifo_top_sv_unit" already exists and will be overwritten. Overwriting SystemVerilog $unit with different source files.
+-- Compiling package Fifo_top_sv_unit
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package Fifo_test_pkg
+-- Importing package fifo_env_pkg
+-- Importing package fifo_driver_pkg
+-- Importing package fifo_config_obj_pkg
+-- Importing package fifo_sequence_item_pkg
+-- Importing package MySequencer_pkg
+-- Importing package fifo_agent_pkg
+-- Importing package fifo_monitor_pkg
+-- Importing package fifo_coverage_pkg
+** Warning: C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_coverage_collector.sv(53): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+** Warning: C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_coverage_collector.sv(65): (vlog-13203) option.cross_auto_bin_max = 0 setting is non-LRM compliant. No auto cross bins will be generated.
+-- Importing package fifo_write_only_seq_pkg
+-- Importing package fifo_read_only_seq_pkg
+-- Importing package fifo_write_read_seq_pkg
+-- Importing package fifo_reset_sequence_pkg
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_assertions.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_assertions.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module fifo_sva
+
+Top level modules:
+	fifo_sva
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_reset_seq.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_reset_seq.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_reset_sequence_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_reset_seq.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_driver.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_driver.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_driver_pkg
+-- Importing package fifo_config_obj_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_driver.sv(6): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_read_seq.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_read_seq.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_write_read_seq_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_read_seq.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequence_item.sv {2 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequence_item.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_sequence_item_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequence_item.sv(4): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+** Warning: C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequence_item.sv(37): (vlog-2643) Unterminated string literal continues onto next line.
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequencer.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequencer.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package MySequencer_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_sequencer.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_only_seq.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_only_seq.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_write_only_seq_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_write_only_seq.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_scoreboard.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_scoreboard.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_scoreboard_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_scoreboard.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_read_only_seq.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_read_only_seq.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_read_only_seq_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_read_only_seq.sv(5): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_agent.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_agent.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_agent_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_driver_pkg
+-- Importing package fifo_config_obj_pkg
+-- Importing package fifo_sequence_item_pkg
+-- Importing package fifo_monitor_pkg
+-- Importing package MySequencer_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_agent.sv(9): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_test.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_test.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package Fifo_test_pkg
+-- Importing package fifo_env_pkg
+-- Importing package fifo_driver_pkg
+-- Importing package fifo_config_obj_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+-- Importing package MySequencer_pkg
+-- Importing package fifo_agent_pkg
+-- Importing package fifo_monitor_pkg
+-- Importing package fifo_coverage_pkg
+-- Importing package fifo_write_only_seq_pkg
+-- Importing package fifo_read_only_seq_pkg
+-- Importing package fifo_write_read_seq_pkg
+-- Importing package fifo_reset_sequence_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_test.sv(11): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_config_obj.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_config_obj.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_config_obj_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_config_obj.sv(4): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/FIFO.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/FIFO.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling module FIFO
+
+Top level modules:
+	FIFO
+
+} {} {}} C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_env.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_env.sv
+QuestaSim-64 vlog 10.6c Compiler 2017.07 Jul 26 2017
+-- Compiling package fifo_env_pkg
+-- Importing package fifo_driver_pkg
+-- Importing package fifo_config_obj_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+-- Importing package fifo_sequence_item_pkg
+-- Importing package MySequencer_pkg
+-- Importing package fifo_agent_pkg
+-- Importing package fifo_monitor_pkg
+-- Importing package fifo_coverage_pkg
+** Note: (vlog-2286) C:/Users/pc/Documents/a_Fifo_uvm_proj/Fifo_env.sv(8): Using implicit +incdir+C:/questasim64_10.6c/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+
+Top level modules:
+	--none--
+
+} {} {}}
