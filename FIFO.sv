@@ -1,4 +1,4 @@
-//vcover report top_FIFO.ucdb -all -details -output coverage_fifo.txt
+//vcover report top.ucdb -all -details -output coverage_fifo.txt
 module FIFO(FIFO_interface.DUT inter);
 
   // Write Logic

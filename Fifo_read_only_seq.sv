@@ -12,16 +12,15 @@ function new ( string name = "fifo_read_only_seq");
 endfunction
 
 task  body;
-repeat(100) begin
+repeat(1000) begin
     `uvm_info("run_phase","main sequence",UVM_MEDIUM)
     seq_item = fifo_seq_item#()::type_id::create("seq_item");
-    start_item(seq_item);
-    seq_item.wr_en = 0; 
-    seq_item.rd_en = 1;
-    seq_item.wr_en.rand_mode(0);
-    seq_item.rd_en.rand_mode(0);
+    seq_item.rand_mode(0);
     seq_item.data_in.rand_mode(1);
     seq_item.rst_n.rand_mode(1);
+    start_item(seq_item);
+    seq_item.wr_en = 0; 
+    seq_item.rd_en = 1;  
     assert(seq_item.randomize());
     finish_item(seq_item);
 end

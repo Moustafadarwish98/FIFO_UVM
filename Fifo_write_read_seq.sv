@@ -12,14 +12,11 @@ function new ( string name = "fifo_write_read_seq");
 endfunction
 
 task  body;
-repeat(10000) begin
+repeat(1000) begin
     `uvm_info("run_phase","main sequence",UVM_MEDIUM)
     seq_item = fifo_seq_item#()::type_id::create("seq_item");
+    seq_item.rand_mode(1);
     start_item(seq_item);
-    seq_item.wr_en.rand_mode(1);
-    seq_item.rd_en.rand_mode(1);
-    seq_item.data_in.rand_mode(1);
-    seq_item.rst_n.rand_mode(1);
     assert(seq_item.randomize());
     finish_item(seq_item);
 end

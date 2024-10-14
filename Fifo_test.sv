@@ -45,7 +45,6 @@ class fifo_test extends uvm_test;
     //reset sequence
     `uvm_info("run_phase","Reset Asserted",UVM_MEDIUM)
     reset_seq.start(env.agent.sqr);
-    `uvm_info("run_phase","Reset Deasserted",UVM_MEDIUM)
     //write_only sequence
     `uvm_info("run_phase","Stimulus Generation started",UVM_MEDIUM)
     write_only_seq.start(env.agent.sqr);
@@ -54,6 +53,8 @@ class fifo_test extends uvm_test;
     `uvm_info("run_phase","Stimulus Generation started",UVM_MEDIUM)
     read_only_seq.start(env.agent.sqr);
     `uvm_info("run_phase","Stimulus Generation ended",UVM_MEDIUM)
+    `uvm_info("run_phase","Reset Deasserted",UVM_MEDIUM)
+    #1000
     //write_read sequence
     `uvm_info("run_phase","Stimulus Generation started",UVM_MEDIUM)
     write_read_seq.start(env.agent.sqr);
